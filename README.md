@@ -7,7 +7,7 @@
 - 采用json方式的数据存储方便添加与删除/自定义
 
 # 使用方法
--  [下载QQWX自动轰炸](#releases)
+-  [下载QQWX自动轰炸](#Releases)
 - 在安装目录下，运行net9运行时.exe
 - 运行程序后是这样的
 ![alt text](image.png)
