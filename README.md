@@ -25,4 +25,5 @@
 - 友好发言是不产生冲突的前提，请友善交流
 
 # 开发群
--
+- 请有问题的用户，或者开发者先提交issues
+- [提交地址](https://github.com/whyxiaoxing/qqwxbiubiubiu/issues)
