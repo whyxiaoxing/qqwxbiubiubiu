@@ -1,8 +1,0 @@
-[2025-09-26-16-40-33-[INFO]:] 程序开始运行
-[2025-09-26-16-40-33-[INFO]:] 已经完成日志系统加载
-[2025-09-26-16-40-33-[INFO]:] 尝试初始化用户数据
-[2025-09-26-16-40-33-[INFO]:] 读取到的数据：Log=F:\c#2\test\x64\Debug\log, JSON=F:\c#2\test\x64\Debug\json\1.json, 次数=0, 对象=请输入轰炸对象
-[2025-09-26-16-42-51-[INFO]:] 写入的userkill_obj 请输入轰炸对象
-userjson的usersend_num 0
-iuserjson的log位置F:\c#2\test\x64\Debug\log
-userjson的json文件位置F:\c#2\test\x64\Debug\json\1.json

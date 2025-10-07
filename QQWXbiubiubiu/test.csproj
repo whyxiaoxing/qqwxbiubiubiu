@@ -1,0 +1,56 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows10.0.22000.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  
+	  <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+	  <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+	  <BaseOutputPath>F:\c#2\test</BaseOutputPath>
+	  <UseWindowsForms>True</UseWindowsForms>
+	  <ApplicationIcon>pic\1.ico</ApplicationIcon>
+	  <AssemblyName>QQWX自动轰炸</AssemblyName>
+	  <PlatformTarget>x64</PlatformTarget>
+	  <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="1.ico" />
+    <None Remove="2.png" />
+    <None Remove="pic\1.ico" />
+    <None Remove="pic\2.png" />
+    <None Remove="pic\3.png" />
+    <None Remove="固定信息\readme.html" />
+    <None Remove="固定信息\readme.md" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="pic\1.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="固定信息\readme.html" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <PackageReference Include="InputSimulator" Version="1.0.4" />
+    <PackageReference Include="Serilog" Version="4.3.0" />
+    <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+  </ItemGroup>
+
+  
+  <ItemGroup>
+    <Resource Include="pic\1.ico">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pic\2.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="pic\3.png" />
+  </ItemGroup>
+
+</Project>

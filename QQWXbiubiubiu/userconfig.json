@@ -2,7 +2,7 @@
   "usersend_num": "0",
   "userkill_obj": "请输入轰炸对象",
   "userlog_site": "./log",
-  "userJosn_site": "F:\\c#2\\test\\x64\\Debug\\json\\1.json",
+  "userJosn_site": "./json/推荐使用.json",
   "user_mouse_click": "SendInput",
-  "user_INTPAT": "EnumWindows"
+  "user_INTPAT":"EnumWindows"
 }
