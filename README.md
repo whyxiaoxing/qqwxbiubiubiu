@@ -1,13 +1,15 @@
 #### 很高兴遇见你
+#### [GitHub地址](https://github.com/whyxiaoxing)
 # 是否在为被人喷而烦恼，手速比不过对面
 ## 没事，QQWX自动轰炸帮你解决
 ![alt text](1.png)
 - 采用windwos原生接口，自动发送信息
--enum/findwindow任你选择
+- enum / findwindow 任你选择
 - 采用json方式的数据存储方便添加与删除/自定义
 
 # 使用方法
--  [下载QQWX自动轰炸](https://github.com/whyxiaoxing/qqwxbiubiubiu/releases)
+- [b站教程](https://www.bilibili.com/video/BV1KoxDzqE9i/?spm_id_from=333.1387.homepage.video_card.click&vd_source=838479c653605efd89053dc7af51dc9b)
+- [下载QQWX自动轰炸](https://github.com/whyxiaoxing/qqwxbiubiubiu/releases)
 - 在安装目录下，运行net9运行时.exe
 - 运行程序后是这样的
 ![alt text](image.png)
@@ -27,3 +29,6 @@
 # 开发群
 - 请有问题的用户，或者开发者先提交issues
 - [提交地址](https://github.com/whyxiaoxing/qqwxbiubiubiu/issues)
+# 项目计划
+- 2025年 12月重新构建 窗口获取方式以及鼠标位置，面向YOLO+WGC 或者YOLO+DXGI实现窗口获取
+- 目前处于暂停状态，需要更多开发者加入
