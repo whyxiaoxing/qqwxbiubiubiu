@@ -2,7 +2,6 @@ F:\c#2\test\x64\Debug\QQWX自动轰炸.exe
 F:\c#2\test\x64\Debug\QQWX自动轰炸.deps.json
 F:\c#2\test\x64\Debug\QQWX自动轰炸.runtimeconfig.json
 F:\c#2\test\x64\Debug\QQWX自动轰炸.dll
-F:\c#2\test\x64\Debug\QQWX自动轰炸.pdb
 D:\C#\test\obj\x64\Debug\test.csproj.AssemblyReference.cache
 D:\C#\test\obj\x64\Debug\MainWindow.g.cs
 D:\C#\test\obj\x64\Debug\Window1.g.cs
@@ -20,6 +19,6 @@ D:\C#\test\obj\x64\Debug\test.csproj.CoreCompileInputs.cache
 D:\C#\test\obj\x64\Debug\test.csproj.Up2Date
 D:\C#\test\obj\x64\Debug\QQWX自动轰炸.dll
 D:\C#\test\obj\x64\Debug\refint\QQWX自动轰炸.dll
-D:\C#\test\obj\x64\Debug\QQWX自动轰炸.pdb
 D:\C#\test\obj\x64\Debug\test.genruntimeconfig.cache
 D:\C#\test\obj\x64\Debug\ref\QQWX自动轰炸.dll
+F:\c#2\test\x64\Debug\pic\1.ico

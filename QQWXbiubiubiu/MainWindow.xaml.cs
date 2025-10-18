@@ -35,7 +35,7 @@ namespace test
             日志系统.I_Info(IN);
             if (公共数据.json文件路径 == null)
             {
-                System.Windows.MessageBox.Show("写入时候json为空","userconfig配置",MessageBoxButton.OKCancel);
+                System.Windows.MessageBox.Show("json路径没有获取到或者被程序提前释放","写入json错误",MessageBoxButton.OKCancel);
                 return;
             }
             string path = ".\\userconfig.json";
@@ -58,7 +58,7 @@ namespace test
 
         private void 事件触发1(object sender, MouseButtonEventArgs e)
         {
-            日志系统.I_Info("用户代开了readme");
+            日志系统.I_Info("用户打开了readme");
             事件处理 实例化内容 = new 事件处理();
             实例化内容.打开文件("readme.html");
 
@@ -84,7 +84,7 @@ namespace test
 
         private void 事件触发2(object sender, RoutedEventArgs e)
         {
-            日志系统.I_Info("用户代开了日志");
+            日志系统.I_Info("用户打开了日志");
             System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo()
             {
                 FileName = "explorer.exe",
@@ -147,7 +147,8 @@ namespace test
             任务_令牌源 = new CancellationTokenSource();
 
             任务状态 = true;
-            启动任务(任务_令牌源.Token, 按钮);
+            Task.Run(() => { 启动任务(任务_令牌源.Token, 按钮); });
+            
 
 
         }

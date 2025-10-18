@@ -7,7 +7,7 @@
         mc:Ignorable="d" Height="291" Width="401" Background="#B2262626" Foreground="{x:Null}" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow">
     <Grid>
         <Label Content="版本信息" HorizontalAlignment="Left" Height="31" Margin="10,10,0,0" VerticalAlignment="Top" Width="81" Background="{x:Null}" Foreground="White" FontSize="16"/>
-        <Label Content="1.0.2" HorizontalAlignment="Left" Height="31" Margin="108,10,0,0" VerticalAlignment="Top" Width="101" Foreground="White" FontSize="20"/>
+        <Label Content="1.0.3" HorizontalAlignment="Left" Height="31" Margin="108,10,0,0" VerticalAlignment="Top" Width="101" Foreground="White" FontSize="20"/>
         <Label Content="作者" HorizontalAlignment="Left" Height="31" Margin="10,46,0,0" VerticalAlignment="Top" Width="81" FontSize="17" Background="{x:Null}" Foreground="#FFF7F7F7"/>
         <Label Content="whyxiaoxing(小星)" HorizontalAlignment="Left" Height="31" Margin="108,46,0,0" VerticalAlignment="Top" Width="180" FontSize="17" Foreground="White"/>
         <Label Content="作者网站" HorizontalAlignment="Left" Height="32" Margin="10,82,0,0" VerticalAlignment="Top" Width="81" FontSize="17" Foreground="White"/>

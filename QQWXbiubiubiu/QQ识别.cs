@@ -41,11 +41,6 @@ public class 窗口尺寸获取()
         string IN;
         int 窗口宽度 = 窗口数据.Right - 窗口数据.Left;
         int 窗口高度 = 窗口数据.Bottom - 窗口数据.Top;
-        IN = $"窗口数据.Right:" + 窗口数据.Right + "窗口数据.Left:" + 窗口数据.Left + "窗口数据.Bottom:" + 窗口数据.Bottom + "窗口数据.Top:" + 窗口数据.Top;
-        日志系统.I_Info(IN);
-        IN = $"窗口尺寸 宽度: {窗口宽度}, 高度: {窗口高度}";
-        日志系统.I_Info(IN);
-
         var 点击位置实际x = 窗口数据.Left + (int)(窗口宽度 * x百分比);
         var 点击位置实际y = 窗口数据.Top + (int)(窗口高度 * y百分比);
          IN = "得到的点击位置 x轴" + 点击位置实际x + " y轴" + 点击位置实际y;
@@ -111,7 +106,7 @@ public class 鼠标事件
     {
         if (公共数据.点击位置x == 0 || 公共数据.点击位置y == 0)
         {
-            System.Windows.MessageBox.Show("窗口取值失败，向开发者反馈", "程序错误", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
+            System.Windows.MessageBox.Show("窗口取值失败，向开发者反馈", "算法错误", System.Windows.MessageBoxButton.OK, System.Windows.MessageBoxImage.Error);
             throw new Exception(" ");
         }
 
@@ -164,8 +159,6 @@ public class 事件处理{
                 return;
             }
             string html文件位置 = $"{公共数据.当前文件位置}\\固定信息\\{路径}";
-            string IN = "当前打开文件为"+html文件位置 ;
-            日志系统.I_Info(IN);
             RegistryKey key = Registry.ClassesRoot.OpenSubKey(@"http\shell\open\command\");
             String s = key.GetValue("").ToString();
             String browserpath = null;

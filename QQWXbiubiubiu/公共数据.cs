@@ -147,9 +147,6 @@ public class MVVM视图逻辑 : INotifyPropertyChanged
 
     }
 
-
-
-
    public event PropertyChangedEventHandler? PropertyChanged;
     protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null) =>
         PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));

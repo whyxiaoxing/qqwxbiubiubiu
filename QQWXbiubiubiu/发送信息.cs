@@ -1,6 +1,7 @@
 using System.IO;
 using System.Runtime.InteropServices;
 using System.Text.Json;
+using System.Threading.Tasks;
 using System.Windows;
 using test;
 using WindowsInput;
@@ -78,7 +79,7 @@ namespace 测试
 
             if (公共数据.MVVM统一接口.m.消息次数 <= 0 || 公共数据.得到的句柄 == IntPtr.Zero || 公共数据.json文件路径 == " ")
             {
-                System.Windows.MessageBox.Show("缺少必须填写的数据", "基本数据获取", MessageBoxButton.OK, MessageBoxImage.Error);
+                System.Windows.MessageBox.Show("缺少必须填写的数据", "用户基本数据数据获取", MessageBoxButton.OK, MessageBoxImage.Error);
                 throw new Exception("错误");
             }
 
@@ -148,13 +149,13 @@ namespace 测试
 
        
 
-        public void 发送信息模块(CancellationToken 状态)
+        public async Task 发送信息模块(CancellationToken 状态)
         {   
             
            
             if (IsIconic(公共数据.得到的句柄) == true)
             {
-                test.日志系统.I_Info("窗口已最小化，尝试还原窗口,并跳过SetForegro undWindow");
+                test.日志系统.I_Info("窗口已最小化，尝试还原窗口,并跳过SetForegroundWindow");
                 ShowWindow(公共数据.得到的句柄, SHOW特用_还原);
                 goto A;
             }
@@ -163,7 +164,6 @@ namespace 测试
             var 置顶结果 = SetForegroundWindow(公共数据.得到的句柄);
             if (true == 置顶结果)
             {
-                test.日志系统.I_Info("SetForegroundWindow成功置顶窗口");
                 goto A;
             }
             else
@@ -220,11 +220,10 @@ namespace 测试
 
                     var sim = new InputSimulator();
                     sim.Keyboard.TextEntry(发送内容);
-                    Thread.Sleep(100);
+                    状态.WaitHandle.WaitOne(1000);
                     sim.Keyboard.KeyPress(VirtualKeyCode.RETURN);
 
                 }
-            test.日志系统.I_Info("发送信息完毕");
             
         }
     }

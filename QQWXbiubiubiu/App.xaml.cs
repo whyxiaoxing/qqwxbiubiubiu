@@ -83,7 +83,7 @@ namespace test
             {
                 Dispatcher.Invoke(() =>
                 {
-                    System.Windows.MessageBox.Show($"启动程序失败，请查看错误日志：{ex}", "error", MessageBoxButton.OKCancel);
+                    System.Windows.MessageBox.Show($"启动程序失败，请查看错误日志：{ex}", "初始化错误", MessageBoxButton.OKCancel);
                     MainWindow?.Close();
                 });
                 return;
