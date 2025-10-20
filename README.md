@@ -30,5 +30,5 @@
 - 请有问题的用户，或者开发者先提交issues
 - [提交地址](https://github.com/whyxiaoxing/qqwxbiubiubiu/issues)
 # 项目计划
-- 2025年 12月重新构建 窗口获取方式以及鼠标位置，面向YOLO+WGC 或者YOLO+DXGI实现窗口获取
-- 目前处于暂停状态，需要更多开发者加入
+- 因我采用Blackwell, Compute Capability = SM 120,pytorch到目前（2025/10/20）不支持该架构，暂停项目预计采用YOLO算法识别框项目暂停，但DXGI/WGC不会暂停，12月仍会继续开发，仍需要开发者加入。
+- 下载pytorch源码对于目前来说不会考虑，过于困难
